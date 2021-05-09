@@ -63,3 +63,8 @@
 ;; (setq rustic-lsp-server 'rust-analyzer)
 (after! rustic
   (setq rustic-lsp-server 'rust-analyzer))
+
+(setq load-path (cons "~/tidal/" load-path))
+(require 'tidal)
+(setq tidal-interpreter "/Users/evan/.ghcup/bin/ghci")
+(setq tidal-boot-script-path "~/.cabal/store/ghc-8.10.4/tdl-1.7.4-ee4f92ea/share/BootTidal.hs")
