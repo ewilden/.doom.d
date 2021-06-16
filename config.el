@@ -7,7 +7,7 @@
 ;; Some functionality uses this to identify you, e.g. GPG configuration, email
 ;; clients, file templates and snippets.
 (setq user-full-name "Evan Wildenhain"
-      user-mail-address "m@evanwildenha.in")
+      user-mail-address "wildenhain@google.com")
 
 ;; Doom exposes five (optional) variables for controlling fonts in Doom. Here
 ;; are the three important ones:
@@ -22,7 +22,7 @@
 ;; (setq doom-font (font-spec :family "monospace" :size 12 :weight 'semi-light)
 ;;       doom-variable-pitch-font (font-spec :family "sans" :size 13))
 
-(setq doom-font (font-spec :family "Menlo" :size 14))
+;; (setq doom-font (font-spec :family "Menlo" :size 14))
 (add-hook 'window-setup-hook #'toggle-frame-maximized)
       ;; doom-variable-pitch-font (font-spec :family "Fira Sans"))
 
@@ -73,3 +73,5 @@
 
 (map! :gi "C-RET" #'tidal-run-line)
 (map! :gn [C-return] #'tidal-run-line)
+
+(use-package! soy-mode)

@@ -50,3 +50,5 @@
 ;(unpin! pinned-package another-pinned-package)
 ;; ...Or *all* packages (NOT RECOMMENDED; will likely break things)
 ;(unpin! t)
+
+(package! soy-mode :recipe (:local-repo "/google/src/head/depot/google3/third_party/java_src/soy/tools/editors/emacs/"))
